@@ -1,0 +1,114 @@
+body {
+    background-color: blanchedalmond;
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+img {
+    max-width: 100%;
+}
+
+.nav > ul {
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #096fa3;
+}
+
+.nav > ul > li {
+    float: right;
+    display: block;
+    text-align: center;
+    padding: 10px;
+}
+
+.nav > ul > li > a {
+    text-decoration: none;
+    color: white;
+}
+
+.grid-container {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.about {
+    grid-column: 1 / span 9;
+    padding: 1% 5%;
+}
+
+.main-image {
+    grid-column: 1 / span 9;
+    padding: 1% 10%;
+}
+
+.meetups {
+    grid-column: 1 / span 9;
+    padding: 1% 5%;
+}
+
+.meetup-manchester {
+    grid-column: 1 / span 3;
+    border-style: solid;
+    border-width: 5px;
+    border-radius: 5px;
+    padding: 0px 10px 5px;
+    margin: 10px;
+    text-align: center;
+    background-color: #55e995;
+}
+
+.meetup-stockport {
+    grid-column: 4 / span 3;
+    border-style: solid;
+    border-width: 5px;
+    border-radius: 5px;
+    padding: 0px 10px 5px;
+    margin: 10px;
+    text-align: center;
+    background-color: #fea38a;
+}
+
+.meetup-salford {
+    grid-column: 7 / span 3;
+    border-style: solid;
+    border-width: 5px;
+    border-radius: 5px;
+    padding: 0px 10px 5px;
+    margin: 10px;
+    text-align: center;
+    background-color: #ffdf8a;
+}
+
+.sidebar {
+    grid-area: 1 / 10 / 5 / 13;
+    background-color: #096fa3;
+    color: white;
+    padding: 20px;
+}
+
+/*
+ to set the position via columns use:
+ grid-column: 1 / span 3;
+
+ to set the position using grid area use:
+ grid-area: 1 / 10 / 5 / 13;
+
+*/
+
+@media only screen and (max-width: 768px) {
+    .grid-container {
+        display:grid;
+        gap: 10px;
+        grid-template-columns: repeat(9, 1fr);
+    }
+    
+}
+
+@media only screen and (max-width: 600px) {
+    
+}
+
+
